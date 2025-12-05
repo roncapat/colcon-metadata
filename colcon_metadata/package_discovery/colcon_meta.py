@@ -53,7 +53,7 @@ class ColconMetadataDiscovery(PackageDiscoveryExtensionPoint):
             path = Path(meta)
             if not path.exists():
                 logger.warning(
-                    "Path '%s' is neither a file ora folder. Skipping metadata path." % path.absolute())
+                    "Path '%s' is neither a file or a folder. Skipping metadata path." % path.absolute())
                 continue
             if path.is_dir():
                 path_file = path / 'colcon.meta'
